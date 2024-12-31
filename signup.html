@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Signup</title>
+        <style>
+            input
+            {
+                text-decoration: dashed;
+                size: 140px;
+                height: 30px;
+            }
+            .div-1
+            {
+                background-color: lightgrey;
+                width: 350px;
+                border-radius: 4% 4% 4% 4%;
+                padding: 15px;
+                margin: 20px;
+                position: absolute;
+                top: 10%;
+                left: 36%;
+            }
+            .div-1 .sign-up
+            {
+                height: 30px;
+                width: 120px;
+                background-color: green;
+                font-size: 20px;
+                border-radius: 8% 8% 8% 8%;
+                font-family: Verdana;
+            }
+            .div-2 .sign-in
+            {
+                height: 30px;
+                width: 120px;
+                background-color:#ffca33;
+                font-size: 20px;
+                border-radius: 8% 8% 8% 8%;
+                font-family: Verdana;
+            }
+            .div-1 .sign-up:hover
+            {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+                color: white;
+                background-color: red;
+            }
+            .div-2 .sign-in:hover
+            {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+                color: white;
+                background-color:red;
+            }
+            .sign-up:active 
+            {
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+            body
+            {
+                background-image: url('https://www.pngmart.com/files/7/Mobile-Phone-PNG-Transparent-HD-Photo.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .div-2
+            {
+                background-color: lightgrey;
+                width: 350px;
+                border-radius: 4% 4% 4% 4%;
+                padding: 15px;
+                margin: 20px;
+                position: absolute;
+                top: 62%;
+                left: 36%;
+                height: 160px;
+            }
+            .just{
+                display: flex;
+                justify-content: center;
+            }
+            button
+            {
+                width: 120px;
+                height: 30px;
+                background-color: rgba(41, 32, 32, 0.584);
+                color: white;
+                border-radius: 8% 8% 8% 8%;
+                font-size: small;
+            }
+            button:hover{
+                background-color: transparent;
+                color: black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div align="center" class="div-1">
+            <form action="signup.php" method="post">
+                <table align="center" cellpadding="6">
+                    <tr>
+                        <th><h1>Sign Up</h1></th>
+                    </tr>
+                    <tr>
+                        <th><h3>NAME</h3></th>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;"><input type="text" name="n1"></td>
+                    </tr>
+                    <tr>
+                        <th><h3>EMAIL ADDRESS</h3></th>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;"><input type="email" name="e1"></td>
+                    </tr>
+                    <tr>
+                        <th><h3>PASSWORD</h3></th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"><input type="password" name="p1"></td>
+                    </tr>
+                    <!-- <tr>
+                        <th><h3>CONFIRM PASSWORD</h3></th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"><input type="password" name="p2"></td>
+                    </tr> -->
+                    <tr>
+                        <!-- <td align="center"><button class="sign-up">SIGN UP</button></td> -->
+                        <!-- <td align="center"><img src="https://th.bing.com/th/id/R.10bdd0918a1f1f385a54030de4a0131c?rik=HMoDxdED1d%2f7Jw&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fx%2fU%2fz%2fY%2fM%2fj%2fthin-gray-signup-button-hi.png&ehk=S65nHDgkDiOghPjfUrwQbUlX8Il2XIOL8qKzYyWlbiQ%3d&risl=&pid=ImgRaw&r=0" height="50px" width="170px" alt=""></td> -->
+                        <td class="just"><button class="button">Signup</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="div-2">
+            <table>
+                <tr>
+                    <th><h2>One of us?</h2></th>
+                </tr>
+                <tr>
+                    <td><h4>If you already has an account, just sign in. We've missed you!</h4></td>
+                </tr>
+                <tr>
+                    <!-- <td align="center"><a href="login.html"><button class="sign-in">SIGN IN</button></a></td> -->
+                    <td align="center"><a href="login.html"><img src="https://th.bing.com/th/id/R.c23bb705b8c9bb85fcbede4cd52ab995?rik=8MnWteJZcwLxNA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fd%2fu%2fw%2fy%2fF%2f1%2fthin-gray-signin-button-hi.png&ehk=alZ6w6oKakPKSf4ZH%2bRatpDNG4EyQoR3rpB%2f1McA8BM%3d&risl=&pid=ImgRaw&r=0" height="50px" width="170px" alt=""></a></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

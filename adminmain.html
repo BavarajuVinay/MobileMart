@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>Admin Main</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=neon|anaglyph|fire-animation|fire">
+        <style>
+            button {
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 18px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #fff;
+                background-color:rgb(9, 42, 233);
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px rgb(247, 4, 4);
+            }
+            button:hover 
+            {
+                background-color: #ee210e;
+                box-shadow: 0 9px rgb(9, 42, 233);
+            }
+            button:active {
+                background-color: #e93d0d;
+                box-shadow: 0 5px rgb(0, 2, 110);
+                transform: translateY(4px);
+            }
+            .size{
+                font-size: 40px;
+            }
+            body{
+                background-color: black;
+                color: white;
+            }
+            .t1
+            {
+                vertical-align: top;
+            }
+            .movies:hover 
+            {
+                transform: scale(1.1);
+                /* width: 300px; */
+                /* height: 570px; */
+            }
+            .details-box-1
+            {
+                background-color: white;
+                color: red;
+                top: 35%;
+                left: 19%;
+                height: 280px;
+                width: 300px;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: 0 0 600px rgba(215, 13, 13, 0.948);
+                position: absolute;
+            }
+            .details-box-2  
+            {
+                background-color: white;
+                top: 35%;
+                left: 42%;
+                height: 280px;
+                width: 300px;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: 0 0 60px rgba(215, 13, 13, 0.948);
+                position: absolute;
+            }
+            .details-box-3 
+            {
+                background-color: white;
+                top: 35%;
+                left: 65%;
+                height: 280px;
+                width: 300px;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow: 0 0 60px rgba(215, 13, 13, 0.948);
+                position: absolute;
+            }
+            .middle
+            {
+                position: absolute;
+                padding: 5px;
+                left: 12%;
+                top: 4%;
+                height: 250px;
+                width: 210px;
+                /* background-color: yellow; */
+                color: red;
+            }
+            .middle-1
+            {
+                position: absolute;
+                padding: 5px;
+                left: 15%;
+                top: 4%;
+                height: 250px;
+                width: 210px;
+                /* background-color: yellow; */
+                color: red;
+            }
+            .details-box-1:hover{
+                transform: scale(1.1);
+                box-shadow: 0 0 100px red;
+            }
+            .details-box-2:hover{
+                transform: scale(1.1);
+                box-shadow: 0 0 100px red;
+            }
+            .details-box-3:hover{
+                transform: scale(1.1);
+                box-shadow: 0 0 100px red;
+            }
+            .title{
+                top: 6%;
+                left: 35%;
+                height: 140px;
+                width: 600px;
+                /* background-color: yellow; */
+                position: absolute;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 200%;
+            }
+            .navbar{
+                top: 15%;
+                left: 80%;
+                position: absolute;
+            }
+            /* #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%; 
+                min-height: 100%;
+            } */
+        </style>
+        <script>
+            function openPage(pageUrl){
+                window.open(pageUrl,"_self");
+            }
+        </script>
+    </head>
+    <body>
+        <!-- <video autoplay muted loop plays-inline id="myVideo">
+            <source src="zC:\Users\B V N DURGA VINAY\Downloads\video.mp4" type="video/mp4">
+            <h1 style="color: white;">Your browser does not support HTML5 video.</h1>
+        </video> -->
+        <img align="left" src="https://dvm9jp3urcf0o.cloudfront.net/logo-ideas/technology-logo/mobile-store.png" height="170" width="160">
+        <!-- <img class="title" style="align-items: center;" src="C:\Users\B V N DURGA VINAY\OneDrive\Documents\fsd final project front end\movie munch.jpg" height="140px" width="550px" alt=""> -->
+        <div class="title">
+            <h1 class="font-effect-anaglyph">Welcome&ensp;Admin</h1>
+        </div>
+        <div class="navbar">
+        <table class="t1" border="0" align="center" cellspacing="3" cellpadding="20">
+            <!-- <tr>
+                <th><a  href="header.html" ><button class="button">Home</button></a></th>
+                <th><a  href="bookings.html" ><button class="button">Bookings</button></a></th>
+                <th><a  href="contact.html" ><button class="button">Contact us</button></a></th>
+                <th><a  href="about.html" ><button class="button">About us</button></a></th>-->
+                <!-- <th><a  href="#"><button class="button">Vinay</button></a></th> -->
+                <th><a  href="home.php"><button class="button">Logout</button></a></th>
+            </tr>
+        </table>
+        </div>
+       <div class="details-box-1" id="d1" onclick="openPage('adminusersdata.php')">
+           <div class="middle">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/439/863/original/vector-users-icon.jpg" height="200" width="200" alt="Sorry">
+               <h2>&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp;USERS</h2>
+           </div>
+       </div>
+       <div class="details-box-2" id="d2" onclick="openPage('adminbookingsdata.php')">
+        <div class="middle-1">
+            <img src="https://th.bing.com/th/id/OIP.68cbH5IcYsTwZNSxpQ9TCAHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.9&pid=1.7" height="200" width="200" alt="">
+            <h2>&ensp;&ensp;&ensp;&nbsp;&nbsp;BOOKINGS</h2>
+        </div>
+       </div>
+       <div class="details-box-3" id="d3" onclick="openPage('admincontactdata.php')">
+        <div class="middle-1">
+            <img src="https://st.depositphotos.com/1265075/3330/i/600/depositphotos_33303183-stock-photo-web-contact-us-icons-on.jpg" height="200" width="210" alt="">
+            <h2>&ensp;&ensp;&nbsp;&nbsp;CONTACT US</h2>
+        </div>
+       </div>
+       </div>
+    </body>
+</html>
+
+
+

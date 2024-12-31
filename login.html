@@ -1,0 +1,346 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=neon|anaglyph|fire|fire-animation|shadow-multiple|3d">
+    <style>
+        /* This a admin page css */
+        input
+        {
+            text-decoration: dashed;
+            size: 140px;
+            height: 30px;
+        }
+        .div-1
+        {
+            background-color: lightgray;
+            width: 300px;
+            border-radius: 4% 4% 4% 4%;
+            padding: 50px;
+            margin: 20px;
+            position: absolute;
+            top: 15%;
+            left: 35%;
+        }
+        .div-1 .sign-in
+        {
+            height: 30px;
+            width: 120px;
+            background-color: green;
+            font-size: 20px;
+            border-radius: 8% 8% 8% 8%;
+            font-family: Verdana;
+        }
+        /* .div-2 .sign-up
+        {
+            height: 30px;
+            width: 120px;
+            background-color:#ffca33;
+            font-size: 20px;
+            border-radius: 8% 8% 8% 8%;
+            font-family: Verdana;
+        } */
+        .div-1 .sign-in:hover
+        {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+            color: white;
+            background-color: red;
+        }
+        /* .div-2 .sign-up:hover
+        {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+            color: white;
+            background-color:red;
+        } */
+        .sign-in:active 
+        {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        body
+        {
+            /* background-image: url('https://th.bing.com/th/id/OIP.hHYV15H2E5VIFlNyEbONAQHaE8?pid=ImgDet&rs=1'); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* .div-2
+        {
+            background-color: lightgrey;
+            width: 300px;
+            border-radius: 4% 4% 4% 4%;
+            padding: 50px;
+            margin: 20px;
+            position: absolute;
+            top: 67%;
+            left: 35%;
+            width: 300px;
+            height: 150px;
+        } */
+
+        /* End of the admin CSS */
+
+        /* This is a login page CSS */
+
+        input
+            {
+                text-decoration: dashed;
+                size: 140px;
+                height: 30px;
+            }
+            .div-1
+            {
+                background-color: lightgray;
+                width: 280px;
+                border-radius: 4% 4% 4% 4%;
+                padding: 50px;
+                margin: 20px;
+                position: absolute;
+                top: 10%;
+                left: 36%;
+            }
+            .div-1 .sign-in
+            {
+                height: 30px;
+                width: 120px;
+                background-color: green;
+                font-size: 20px;
+                border-radius: 8% 8% 8% 8%;
+                font-family: Verdana;
+            }
+            .div-2 .sign-up
+            {
+                height: 30px;
+                width: 120px;
+                background-color:#ffca33;
+                font-size: 20px;
+                border-radius: 8% 8% 8% 8%;
+                font-family: Verdana;
+            }
+            .div-1 .sign-in:hover
+            {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+                color: white;
+                background-color: red;
+            }
+            .div-2 .sign-up:hover
+            {
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+                color: white;
+                background-color:red;
+            }
+            .sign-in:active 
+            {
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+            body
+            {
+                background-image: url('https://www.pngmart.com/files/7/Mobile-Phone-PNG-Transparent-HD-Photo.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .div-2
+            {
+                background-color: lightgrey;
+                border-radius: 4% 4% 4% 4%;
+                padding: 50px;
+                margin: 20px;
+                position: absolute;
+                top: 63%;
+                left: 36%;
+                width: 280px;
+                height: 150px;
+            }
+            button
+            {
+                width: 120px;
+                height: 30px;
+                background-color: rgba(41, 32, 32, 0.584);
+                color: white;
+                border-radius: 8% 8% 8% 8%;
+                font-size: small;
+            }
+            button:hover{
+                background-color: transparent;
+                color: black;
+            }
+            .just{
+                display: flex;
+                justify-content: center;
+            }
+            a{
+                text-decoration: none;
+            }
+
+            /* End of login page CSS */
+
+    </style>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
+
+</head>
+<body>
+    
+    <!-- User login code -->
+
+  <div id="Page1">
+    <div align="center" class="div-1">
+        <form action="login.php" method="post">
+            <table align="center" border="0" width="100%" cellpadding="6">
+                <tr>
+                    <th colspan="2"><h1 class="font-effect-anaglyph">Sign in</h1></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>EMAIL ADDRESS</h3></th>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;"><input type="email" name="e1"></td>
+                </tr>
+                <tr>
+                    <th colspan="2"><h3>PASSWORD</h3></th>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="password" name="p1"></td>
+                </tr>
+                <tr>
+                    <!-- <td align="center"><button class="sign-in">SIGN IN</button></td> -->
+                    <!-- <td colspan="2"><center><a href="#"><img src="https://th.bing.com/th/id/R.c23bb705b8c9bb85fcbede4cd52ab995?rik=8MnWteJZcwLxNA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fd%2fu%2fw%2fy%2fF%2f1%2fthin-gray-signin-button-hi.png&ehk=alZ6w6oKakPKSf4ZH%2bRatpDNG4EyQoR3rpB%2f1McA8BM%3d&risl=&pid=ImgRaw&r=0" height="50px" width="170px" alt=""></a></center></td> -->
+                    <!-- <td style="text-align: center;"><input class="button" type="submit" value="login"></td> -->
+                    <td class="just"><button class="button">Login</button></td>
+                </tr>
+                <tr>
+                    <td><center><a href="forgotpass.html">Forgot Password?</a></center></td>
+                    <!-- <td><a href="#" onclick="return show('Page2','Page1');"><button>Are you a Admin?</button></a></td> -->
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="div-2">
+        <table>
+            <tr>
+                <th><h2 class="font-effect-anaglyph">New Here?</h2></th>
+            </tr>
+            <tr>
+                <td><h4>Elevate your mobile shopping journey today. Join now for personalized offers and effortless browsing.</h4></td>
+            </tr>
+            <tr>
+                <!-- <td align="center"><a href="signup.html"><button class="sign-up">SIGN UP</button></a></td> -->
+                <td align="center"><a href="signup.html"><img src="https://th.bing.com/th/id/R.10bdd0918a1f1f385a54030de4a0131c?rik=HMoDxdED1d%2f7Jw&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fx%2fU%2fz%2fY%2fM%2fj%2fthin-gray-signup-button-hi.png&ehk=S65nHDgkDiOghPjfUrwQbUlX8Il2XIOL8qKzYyWlbiQ%3d&risl=&pid=ImgRaw&r=0" height="50px" width="170px" alt=""></a></td>
+            </tr>
+        </table>
+    </div>
+  </div>
+  </div>
+
+    <!-- Admin login code  -->
+
+  <!-- <div id="Page2" style="display:none">
+    <div align="center" class="div-1">
+        <table align="center" cellpadding="6">
+            <tr>
+                <th colspan="2"><h1 class="font-effect-anaglyph">Sign in</h1></th>
+            </tr>
+            <tr>
+                <th colspan="2"><h3>EMAIL ADDRESS</h3></th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;"><input type="email" name="e1"></td>
+            </tr>
+            <tr>
+                <th colspan="2"><h3>PASSWORD</h3></th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="password" name="p1"></td>
+            </tr>
+            <tr>
+                <td align="center"><button class="sign-in">SIGN IN</button></td>
+                <td colspan="2"><center><a href="#"><img src="https://th.bing.com/th/id/R.c23bb705b8c9bb85fcbede4cd52ab995?rik=8MnWteJZcwLxNA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fd%2fu%2fw%2fy%2fF%2f1%2fthin-gray-signin-button-hi.png&ehk=alZ6w6oKakPKSf4ZH%2bRatpDNG4EyQoR3rpB%2f1McA8BM%3d&risl=&pid=ImgRaw&r=0" height="50px" width="170px" alt=""></a></center></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="return show('forgot admlogin','Page2');">Forgot Password?</a></td>
+                <td><a href="#" onclick="return show('Page1','Page2');"><button>Are you a User?</button></a></td>
+            </tr>
+        </table>
+    </div>
+  </div> -->
+
+    <!-- Forgot password code  -->
+
+    <!-- <div id="forgot login" style="display: none;">
+       <div align="center" class="div-1">
+        <table align="center" cellpadding="6">
+            <tr>
+                <th colspan="2"><h1 class="font-effect-anaglyph">Sign in</h1></th>
+            </tr>
+            <tr>
+                <th colspan="2"><h3>EMAIL ADDRESS</h3></th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;"><input type="email" name="e1"></td>
+            </tr>
+            <tr>
+                <th colspan="2"><h3>PASSWORD</h3></th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="password" name="p1"></td>
+            </tr>
+            <tr>
+                <th colspan="2"><h3>CONFIRM PASSWORD</h3></th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="password" name="p2"></td>
+            </tr>
+            <tr> -->
+                <!-- <td align="center"><button class="sign-in">SIGN IN</button></td> -->
+                <!-- <td colspan="2"><center><a href="#" onclick="return show('Page1','forgot login');"><button>Update Password</button></a></center></td>
+            </tr>
+            <tr> -->
+                <!-- <td><a href="#" onclick="return show('Page1','forgot login');" >Forgot Password?</a></td> -->
+                <!-- <td><center><a href="#" onclick="return show('Page1','Page2');"><button>Are you a User?</button></a></center></td> -->
+            <!-- </tr>
+        </table>
+       </div>
+    </div> -->
+
+    <!-- <div id="forgot admlogin" style="display: none;">
+        <div align="center" class="div-1">
+         <table align="center" cellpadding="6">
+             <tr>
+                 <th colspan="2"><h1 class="font-effect-anaglyph">Sign in</h1></th>
+             </tr>
+             <tr>
+                 <th colspan="2"><h3>EMAIL ADDRESS</h3></th>
+             </tr>
+             <tr>
+                 <td colspan="2" style="text-align:center;"><input type="email" name="e1"></td>
+             </tr>
+             <tr>
+                 <th colspan="2"><h3>PASSWORD</h3></th>
+             </tr>
+             <tr>
+                 <td colspan="2" style="text-align: center;"><input type="password" name="p1"></td>
+             </tr>
+             <tr>
+                <th colspan="2"><h3>CONFIRM PASSWORD</h3></th>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="password" name="p2"></td>
+            </tr>
+            <tr> -->
+                <!-- <td align="center"><button class="sign-in">SIGN IN</button></td> -->
+                <!-- <td colspan="2"><center><a href="#" onclick="return show('Page2','forgot admlogin');"><img src="https://th.bing.com/th/id/R.c23bb705b8c9bb85fcbede4cd52ab995?rik=8MnWteJZcwLxNA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fd%2fu%2fw%2fy%2fF%2f1%2fthin-gray-signin-button-hi.png&ehk=alZ6w6oKakPKSf4ZH%2bRatpDNG4EyQoR3rpB%2f1McA8BM%3d&risl=&pid=ImgRaw&r=0" height="50px" width="170px" alt=""></a></center></td>
+            </tr>
+            <tr>
+                <td><a href="#" onclick="return show('Page2','forgot admlogin');" >Forgot Password?</a></td> -->
+                <!-- <td><center><a href="#" onclick="return show('Page1','Page2');"><button>Are you a User?</button></a></center></td>
+            </tr>
+        </table>
+    </div> 
+    </div> -->
+</body>
+</html>
